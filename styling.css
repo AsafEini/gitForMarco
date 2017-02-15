@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#calender{
+    width: 900px;
+    height: 450px;
+    outline: 3px solid black;
+    margin-left: 200px;
+    margin-top: 100px;
+
+}
+
+#calender .title{
+    background-color: royalblue;
+    color: white;
+    width:100%;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#calender .empty_day{
+    background-color: aliceblue;
+    width: 12%;
+    outline: 2px solid black;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+#calender .current_day{
+    background-color: forestgreen;
+    width: 12%;
+    outline: 2px solid black;
+    margin-left: 2%;
+    margin-top: 2%;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+
+}
+
+#calender .container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#note_window{
+    position: absolute;
+    display: none;
+    top:200px;
+    left:400px;
+    width:300px;
+    height:150px;
+    background-color: burlywood;
+    outline: 2px solid black;
+}
+
+#note_window .top{
+    width:100%;
+    background-color: cornsilk;
+    text-align: center;
+}
+
+#note_window .close {
+    position: relative;
+    background-color: aqua;
+    outline: 1px solid black;
+    left:104px;
+}
+
+#note_window .note{
+    resize: none;
+    margin-left:20%;
+    margin-top: 3%;
+    height: 60px;
+    width:60%;
+
+}
+
+#note_window .add_note{
+    position: relative;
+    background-color: aqua;
+    outline: 1px solid black;
+    left:115px;
+}
+
+#calender .img_note{
+    content: url("note.png");
+    width: 10px;
+    height: 10px;
+}
